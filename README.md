@@ -1,1 +1,3 @@
-# Apuntes-Parte-2-SQL-Angel-Rodriguez
+###SQL
+A linguaxe SQL é unha linguaxe da que derivan 6 sublinguaxes:
+  
