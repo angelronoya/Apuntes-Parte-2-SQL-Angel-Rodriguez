@@ -1,11 +1,5 @@
 ## SQL
 A linguaxe SQL é unha linguaxe da que derivan 6 sublinguaxes:
-  * DDL
-  * DML 
-  * DQL
-  * TCL
-  * DCL
-  * SCl
   
  #### DDL
  (DATA DEFINITION LANGUAGE): CREATE,ALTER,DROP. Opera sobre datos.
