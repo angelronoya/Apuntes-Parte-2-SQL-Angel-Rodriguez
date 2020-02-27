@@ -20,5 +20,5 @@ A linguaxe SQL é unha linguaxe da que derivan 6 sublinguaxes:
  Son dúas formas diferentes de crear bases de datos. Diferéncianse nos permisos á hora de crealos.
 
  Para cerciorarse de que unha base de datos non está creada, a continuación do CREATE ponse o seguinte.
- [ IF NOT EXISTS ]<nome-da-BD>
+ [IF NOT EXISTS]<nome-da-BD>
   [CHARACTER SET <nomedoCharset>]
