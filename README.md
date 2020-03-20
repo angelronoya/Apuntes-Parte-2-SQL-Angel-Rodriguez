@@ -48,7 +48,6 @@ A linguaxe SQL é unha linguaxe da que derivan 6 sublinguaxes:
 ```ALTER TABLE Profesor
     DROP CONSTRAINT FK_Grupo_Profesor;
 ```	
- ```
 
  ### DML
  #### INSERT
