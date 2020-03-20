@@ -32,19 +32,23 @@ A linguaxe SQL é unha linguaxe da que derivan 6 sublinguaxes:
  ##### 1. AÑADIR
  Para añadir unha taboa ou parte dela, despois do ALTER TABLE <Nome-da-taboa> escríbese un ADD CONSTRAINT e a continuación 
  o nome do elemento a engadir. Por exemplo unha clave foránea. 
-	ALTER TABLE Departamento
+
+```	ALTER TABLE Departamento
   ADD CONSTRAINT FK_Profesor_Departamento
     FOREIGN KEY (Director)
     REFERENCES Profesor
     ON DELETE SET NULL
     ON UPDATE CASCADE;
+```
  
  ##### 2. ELIMINAR
  Para eliminar unha taboa ou parte dela, despois do ALTER TABLE <Nome-da-taboa> escríbese un DROP CONSTRAINT e a continuación 
  o nome do elemento a eliminar.
-	ALTER TABLE Profesor
+	
+```ALTER TABLE Profesor
     DROP CONSTRAINT FK_Grupo_Profesor;
- 
+```	
+ ```
 
  ### DML
  #### INSERT
@@ -74,10 +78,4 @@ DELETE FROM  <nome-da-táboa>
 [WHERE <predicado>];
 	
 	
-```javascript
-function fancyAlert(arg) {
-  if(arg) {
-    $.facebox({div:'#foo'})
-  }
-}
-```
+
