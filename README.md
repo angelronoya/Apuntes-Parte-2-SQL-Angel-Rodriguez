@@ -17,21 +17,19 @@ A linguaxe SQL é unha linguaxe da que derivan 6 sublinguaxes:
 
  ### DDL
 
- #### CREACIÓN DUNHA BASE DE DATOS
+  ####  * CREACIÓN DUNHA BASE DE DATOS
  (CREATE DATABASE my DB | CREATE SCHEMA myOther DB)
  Son dúas formas diferentes de crear bases de datos. Diferéncianse nos permisos á hora de crealos.
 
  Para cerciorarse de que unha base de datos non está creada, a continuación do CREATE ponse o seguinte.
  [IF NOT EXISTS]<nome-da-BD>
-  [CHARACTER SET <nomedoCharset>]
 
- #### ALTER
+ #### * ALTER
  Emprégase para a modificación dunha relación, taboa, tipo de valor, etc unha vez finalizada unha taboa.
- 
  A estrutura é a seguinte:
  ALTER TABLE <Nome-da-taboa> e a continuación existen dúas posiblilidades: engadir ou eliminar.
  
- ##### AÑADIR
+ #####  * AÑADIR
  Para añadir unha taboa ou parte dela, despois do ALTER TABLE <Nome-da-taboa> escríbese un ADD CONSTRAINT e a continuación 
  o nome do elemento a engadir. Por exemplo unha clave foránea. 
 	ALTER TABLE Departamento
