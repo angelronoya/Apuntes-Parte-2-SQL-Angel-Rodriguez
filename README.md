@@ -78,4 +78,10 @@ DELETE FROM  <nome-da-táboa>
 [WHERE <predicado>];
 	
 	
-
+```javascript
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:'#foo'})
+  }
+}
+```
