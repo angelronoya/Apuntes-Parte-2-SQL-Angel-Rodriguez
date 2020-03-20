@@ -15,13 +15,38 @@ A linguaxe SQL é unha linguaxe da que derivan 6 sublinguaxes:
  #### SCL
  (SESSION CONTROL LANGUAGE): ALTER SESSION
 
- ### CREACIÓN DUNHA BASE DE DATOS
+ ### DDL
+
+ #### CREACIÓN DUNHA BASE DE DATOS
  (CREATE DATABASE my DB | CREATE SCHEMA myOther DB)
  Son dúas formas diferentes de crear bases de datos. Diferéncianse nos permisos á hora de crealos.
 
  Para cerciorarse de que unha base de datos non está creada, a continuación do CREATE ponse o seguinte.
  [IF NOT EXISTS]<nome-da-BD>
   [CHARACTER SET <nomedoCharset>]
+
+ #### ALTER
+ Emprégase para a modificación dunha relación, taboa, tipo de valor, etc unha vez finalizada unha taboa.
+ 
+ A estrutura é a seguinte:
+ ALTER TABLE <Nome-da-taboa> e a continuación existen dúas posiblilidades: engadir ou eliminar.
+ 
+ ##### AÑADIR
+ Para añadir unha taboa ou parte dela, despois do ALTER TABLE <Nome-da-taboa> escríbese un ADD CONSTRAINT e a continuación 
+ o nome do elemento a engadir. Por exemplo unha clave foránea. 
+	ALTER TABLE Departamento
+  ADD CONSTRAINT FK_Profesor_Departamento
+    FOREIGN KEY (Director)
+    REFERENCES Profesor
+    ON DELETE SET NULL
+    ON UPDATE CASCADE;
+ 
+ ##### ELIMINAR
+ Para eliminar unha taboa ou parte dela, despois do ALTER TABLE <Nome-da-taboa> escríbese un DROP CONSTRAINT e a continuación 
+ o nome do elemento a eliminar.
+	ALTER TABLE Profesor
+    DROP CONSTRAINT FK_Grupo_Profesor;
+ 
 
  ### DML
  #### INSERT
