@@ -29,7 +29,7 @@ A linguaxe SQL é unha linguaxe da que derivan 6 sublinguaxes:
  A estrutura é a seguinte:
  ALTER TABLE <Nome-da-taboa> e a continuación existen dúas posiblilidades: engadir ou eliminar.
  
- #####  * AÑADIR
+ ##### 1. AÑADIR
  Para añadir unha taboa ou parte dela, despois do ALTER TABLE <Nome-da-taboa> escríbese un ADD CONSTRAINT e a continuación 
  o nome do elemento a engadir. Por exemplo unha clave foránea. 
 	ALTER TABLE Departamento
@@ -39,7 +39,7 @@ A linguaxe SQL é unha linguaxe da que derivan 6 sublinguaxes:
     ON DELETE SET NULL
     ON UPDATE CASCADE;
  
- ##### ELIMINAR
+ ##### 2. ELIMINAR
  Para eliminar unha taboa ou parte dela, despois do ALTER TABLE <Nome-da-taboa> escríbese un DROP CONSTRAINT e a continuación 
  o nome do elemento a eliminar.
 	ALTER TABLE Profesor
@@ -72,3 +72,12 @@ UPDATE <nome-da-táboa>
 DELETE
 DELETE FROM  <nome-da-táboa>
 [WHERE <predicado>];
+	
+	
+```javascript
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:'#foo'})
+  }
+}
+```
