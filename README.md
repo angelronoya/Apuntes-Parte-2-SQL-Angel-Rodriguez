@@ -55,14 +55,15 @@ ALTER TABLE Profesor
  #### INSERT
  
  A estrutura é a seguinte:
- 
+```sql
 INSERT INTO <nome-da-taboa>
 [(< atributo >, < atributo2 >)]
 (VALUES (< valor1>,<valor2 >) | SELECT );
+ 	 
+```
 Cada atributo leva o value. Por exemplo un atributo sería (1,’cheese’,9.99), (2,’bread’, 1.99)
 Cada un dos parentesis conterá un atributo.
-A estructura será 
-VALUES
+A estructura será para os VALUES:
 ```sql	
  	 (<valor1A>,<valor2A>)
 	 (<valor1B>,<valor2B>)
@@ -73,13 +74,13 @@ SELECT
 Mesmo número de columnas e mismos dominios (os dominios sería como un tipo de datos)
 
 UPDATE
-UPDATE <nome-da-táboa>
-    SET <atributo1> = <valor1>,
-           <atributo2> = <valor2>, …
-[WHERE <predicado>];
+UPDATE < nome-da-táboa >
+    SET < atributo1 > = < valor1 >,
+           < atributo2 > = < valor2 >, …
+[WHERE < predicado> ];
 
 DELETE
-DELETE FROM  <nome-da-táboa>
-[WHERE <predicado>];
+DELETE FROM  < nome-da-táboa >
+[WHERE < predicado >];
 	
 	
