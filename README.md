@@ -53,6 +53,7 @@ ALTER TABLE Profesor
 
  ### DML
  #### INSERT
+ 
  A estrutura é a seguinte:
  
 INSERT INTO <nome-da-taboa>
