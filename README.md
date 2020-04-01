@@ -57,15 +57,18 @@ ALTER TABLE Profesor
  A estrutura é a seguinte:
  
 INSERT INTO <nome-da-taboa>
-[(<atributo>, <atributo2>, ...)]
-(VALUES (<valor1>,<valor2>)| SELECT ...);
-Cada atributo leva o value. Por exemplo un atributo sería (1,’cheese’,9.99), (2,’bread’, 1.99)...
+[(<atributo>, <atributo2>)]
+(VALUES (<valor1>,<valor2>) | SELECT );
+Cada atributo leva o value. Por exemplo un atributo sería (1,’cheese’,9.99), (2,’bread’, 1.99)
 Cada un dos parentesis conterá un atributo.
 A estructura será 
 VALUES
-	 (<valor1A>,<valor2A>,...)
+```sql	
+ 	 (<valor1A>,<valor2A>,...)
 	 (<valor1B>,<valor2B>)
 	 (<valor1N>,<valor2N>)
+```
+	
 SELECT
 Mesmo número de columnas e mismos dominios (os dominios sería como un tipo de datos)
 
