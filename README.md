@@ -70,16 +70,18 @@ A estructura será para os VALUES:
 	 (<valor1N>,<valor2N>)
 ```
 	
-SELECT
+#### SELECT
 Mesmo número de columnas e mismos dominios (os dominios sería como un tipo de datos)
 
-UPDATE
+#### UPDATE
+
 UPDATE < nome-da-táboa >
     SET < atributo1 > = < valor1 >,
            < atributo2 > = < valor2 >, …
 [WHERE < predicado> ];
 
-DELETE
+#### DELETE
+
 DELETE FROM  < nome-da-táboa >
 [WHERE < predicado >];
 	
