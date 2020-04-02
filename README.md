@@ -19,19 +19,37 @@ A linguaxe SQL é unha linguaxe da que derivan 6 sublinguaxes:
 
   ####  * CREATE
  Empregase para crear base de datos.
- (CREATE DATABASE my DB | CREATE SCHEMA myOther DB)
+ (CREATE DATABASE my DB | CREATE SCHEMA myOther DB).
  Son dúas formas diferentes de crear bases de datos. Diferéncianse nos permisos á hora de crealos.
 
  Para cerciorarse de que unha base de datos non está creada, a continuación do CREATE ponse o seguinte.
  [IF NOT EXISTS]<nome-da-BD>
+	
+Ademais, ao crear a táboa hai que referenciar a maneira coa que se van a tratar os datos. Existen catro maneiras:
 
- #### * ALTER
+#####  * NO ACTION
+Considérase unha acción por exemplo BORRAR. 
+- NO ACTION (Cando hai tablas relacionadas, e se elimina algo na táboa “pai”, sigue existindo nas táboas “filla”). É a opción por defecto.
+
+#####  * CASCADE
+-CASCADE (Utilízase para borrar as referencias “pai”, polo cal bórranse as referencias do “fillo”). Efecto cascada.
+
+#####  * SET NULL
+- SET NULL (Utilízase para borrar as referencias “pai”, polo cal as referencias “filla” pon un NULL).
+
+#####  * SET DEFAULT
+-SET DEFAULT (‘Inventa un campo’, para asignarllo a algo, polo que cando se borra, borrase todo).
+
+ ####  ALTER
  Emprégase para a modificación dunha relación, taboa, tipo de valor, etc unha vez finalizada unha taboa.
  A estrutura é a seguinte:
- ALTER TABLE <Nome-da-taboa> e a continuación existen dúas posiblilidades: engadir ou eliminar.
+ ```sql	
+ALTER TABLE <Nome-da-taboa> 
+```
+A continuación, existen dúas posiblilidades: engadir ou eliminar.
  
  ##### 1. AÑADIR
- Para añadir unha taboa ou parte dela, despois do ALTER TABLE <Nome-da-taboa> escríbese un ADD CONSTRAINT e a continuación 
+ Para engadir unha taboa ou parte dela, despois do ALTER TABLE <Nome-da-taboa> escríbese un ADD CONSTRAINT e a continuación 
  o nome do elemento a engadir. Por exemplo unha clave foránea. 
 
 ```sql	
@@ -50,8 +68,8 @@ ALTER TABLE Departamento
 ```sql
 ALTER TABLE Profesor
     DROP CONSTRAINT FK_Grupo_Profesor;
-```	
-
+```
+ 
  ### DML  (INSERT,UPDATE,DELETE)
  #### INSERT
  
@@ -81,8 +99,6 @@ Mesmo número de columnas e mismos dominios (os dominios sería como un tipo de 
         	<atributo2> = <valor2>,
 	[WHERE <predicado> ];
 ```
-
-
 #### DELETE
 ```sql	
  	 DELETE FROM  < nome-da-táboa >
