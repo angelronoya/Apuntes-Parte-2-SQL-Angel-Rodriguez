@@ -17,7 +17,7 @@ A linguaxe SQL é unha linguaxe da que derivan 6 sublinguaxes:
 
  ### DDL (CREATE,ALTER,DROP)
 
-  ####  * CREATE
+  ####  CREATE
  Empregase para crear base de datos.
  (CREATE DATABASE my DB | CREATE SCHEMA myOther DB).
  Son dúas formas diferentes de crear bases de datos. Diferéncianse nos permisos á hora de crealos.
@@ -32,13 +32,13 @@ Considérase unha acción por exemplo BORRAR.
 - NO ACTION (Cando hai tablas relacionadas, e se elimina algo na táboa “pai”, sigue existindo nas táboas “filla”). É a opción por defecto.
 
 #####  * CASCADE
--CASCADE (Utilízase para borrar as referencias “pai”, polo cal bórranse as referencias do “fillo”). Efecto cascada.
+- CASCADE (Utilízase para borrar as referencias “pai”, polo cal bórranse as referencias do “fillo”). Efecto cascada.
 
 #####  * SET NULL
 - SET NULL (Utilízase para borrar as referencias “pai”, polo cal as referencias “filla” pon un NULL).
 
 #####  * SET DEFAULT
--SET DEFAULT (‘Inventa un campo’, para asignarllo a algo, polo que cando se borra, borrase todo).
+- SET DEFAULT (‘Inventa un campo’, para asignarllo a algo, polo que cando se borra, borrase todo).
 
  ####  ALTER
  Emprégase para a modificación dunha relación, taboa, tipo de valor, etc unha vez finalizada unha taboa.
