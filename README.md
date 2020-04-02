@@ -15,9 +15,10 @@ A linguaxe SQL é unha linguaxe da que derivan 6 sublinguaxes:
  #### SCL
  (SESSION CONTROL LANGUAGE): ALTER SESSION
 
- ### DDL
+ ### DDL (CREATE,ALTER,DROP)
 
-  ####  * CREACIÓN DUNHA BASE DE DATOS
+  ####  * CREATE
+ Empregase para crear base de datos.
  (CREATE DATABASE my DB | CREATE SCHEMA myOther DB)
  Son dúas formas diferentes de crear bases de datos. Diferéncianse nos permisos á hora de crealos.
 
@@ -51,7 +52,7 @@ ALTER TABLE Profesor
     DROP CONSTRAINT FK_Grupo_Profesor;
 ```	
 
- ### DML
+ ### DML  (INSERT,UPDATE,DELETE)
  #### INSERT
  
  A estrutura é a seguinte:
@@ -74,15 +75,19 @@ A estructura será para os VALUES:
 Mesmo número de columnas e mismos dominios (os dominios sería como un tipo de datos)
 
 #### UPDATE
+```sql	
+ 	 UPDATE < nome-da-táboa >
+    	    SET <atributo1> = <valor1>,
+        	<atributo2> = <valor2>,
+	[WHERE <predicado> ];
+```
 
-UPDATE < nome-da-táboa >
-    SET < atributo1 > = < valor1 >,
-           < atributo2 > = < valor2 >, …
-[WHERE < predicado> ];
 
 #### DELETE
+```sql	
+ 	 DELETE FROM  < nome-da-táboa >
+	 [WHERE <predicado>];
+```
 
-DELETE FROM  < nome-da-táboa >
-[WHERE < predicado >];
 	
 	
