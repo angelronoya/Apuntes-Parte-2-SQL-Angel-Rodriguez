@@ -104,5 +104,48 @@ Mesmo número de columnas e mismos dominios (os dominios sería como un tipo de 
  	 DELETE FROM  < nome-da-táboa >
 	 [WHERE <predicado>];
 ```
+## INSTALACIÓN DE MYSQL Y APERTURA DESDE VENTANA DE COMANDOS 
+
+En primeiro lugar, vamos a descargar o instalador de MySQL. No meu caso empreguei este:
+
 https://github.com/angelronoya/Apuntes-Parte-2-SQL-Angel-Rodriguez/blob/master/a.PNG
-	
+
+A continuación, abrimos o instalador.
+
+https://github.com/angelronoya/Apuntes-Parte-2-SQL-Angel-Rodriguez/blob/master/b.PNG
+
+Clicamos na opción Developer Default, xa que nos instalará automáticamente todo o necesario para a creación e a xestión para a base de datos. Despois dámoslle a Next.
+A continuación apareceranos unha ventana como a seguinte:
+
+https://github.com/angelronoya/Apuntes-Parte-2-SQL-Angel-Rodriguez/blob/master/c.PNG
+
+Isto mostra os productos que teñen requisitos deficientes, os cales MySQL Installer vai resolver automáticamente. Os que se queiran resolver manualmente seleccionaranse. No meu caso non seleccionarei ningún. Clicamos en Execute, para que os resolva e imos dando os permisos a medida que se vaian instalando os programas. Despois pulsamos en Next.
+Despois de instalar todos os programas empezamos a poñer especificacións:
+
+https://github.com/angelronoya/Apuntes-Parte-2-SQL-Angel-Rodriguez/blob/master/d.PNG
+
+En tipo de configuración, escollemos ‘developement computer’ e o resto de opción deixámolas por defecto.
+Despois elegiremos unha contrasinal para conectarnos co servidor SQL. Ainda que esta pódese modificar cando se queira.
+
+https://github.com/angelronoya/Apuntes-Parte-2-SQL-Angel-Rodriguez/blob/master/e.PNG
+
+A continuación no apartado Windows Service, elegiremos o nombre de servicio SQL.
+Por último, clicamos en execute e aplícase a configuración.
+
+https://github.com/angelronoya/Apuntes-Parte-2-SQL-Angel-Rodriguez/blob/master/f.PNG
+
+Unha vez finalizada a instalación, entraremos no  MySQL Workbench e damos no botón “+”. 
+
+https://github.com/angelronoya/Apuntes-Parte-2-SQL-Angel-Rodriguez/blob/master/g.PNG
+
+Abrirásenos unha ventana como esta: 
+
+https://github.com/angelronoya/Apuntes-Parte-2-SQL-Angel-Rodriguez/blob/master/h.PNG
+
+Introduciremos un nombre para a conexión, a conexión que seleccionamos na instalación, a dirección IP da rede de internet que teñas e o porto e nome de usuario que tamen introduciches na instalación. 
+Unha vez finalizado todo esto, abriremos o cmd e iniciaremos o MySQL dende alí.
+Unha vez aberto o cmd buscaremos esta ruta: 
+C:\Archivos de programa\MySQL\MySQL Server 4.1\bin
+E unha vez aquí, a continuación escríbese “mysql -u nomedeusuario -p” e unha vez damos en Enter, pediranos a contrasinal. Introducímola e xa estaríamos no noso servidor de MySQL.
+
+https://github.com/angelronoya/Apuntes-Parte-2-SQL-Angel-Rodriguez/blob/master/i.PNG
