@@ -145,7 +145,7 @@ https://github.com/angelronoya/Apuntes-Parte-2-SQL-Angel-Rodriguez/blob/master/h
 Introduciremos un nombre para a conexión, a conexión que seleccionamos na instalación, a dirección IP da rede de internet que teñas e o porto e nome de usuario que tamen introduciches na instalación. 
 Unha vez finalizado todo esto, abriremos o cmd e iniciaremos o MySQL dende alí.
 Unha vez aberto o cmd buscaremos esta ruta: 
-C:\Archivos de programa\MySQL\MySQL Server 4.1\bin
+C:\Archivos de programa\MySQL\MySQL Server 4.1\bin.
 E unha vez aquí, a continuación escríbese “mysql -u nomedeusuario -p” e unha vez damos en Enter, pediranos a contrasinal. Introducímola e xa estaríamos no noso servidor de MySQL.
 
 https://github.com/angelronoya/Apuntes-Parte-2-SQL-Angel-Rodriguez/blob/master/i.PNG
