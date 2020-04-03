@@ -104,6 +104,5 @@ Mesmo número de columnas e mismos dominios (os dominios sería como un tipo de 
  	 DELETE FROM  < nome-da-táboa >
 	 [WHERE <predicado>];
 ```
-
-	
+https://github.com/angelronoya/Apuntes-Parte-2-SQL-Angel-Rodriguez/blob/master/a.PNG
 	
