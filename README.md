@@ -1,4 +1,4 @@
-## SQL
+## SQL <a name = "apuntes2"> </a>
 A linguaxe SQL é unha linguaxe da que derivan 6 sublinguaxes:
   
  #### DDL
